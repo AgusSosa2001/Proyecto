@@ -1,4 +1,4 @@
-<h1>Este es mi porfolio</h1>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Perfil personal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Style.css">
     <script src="main.js"></script>
+   
 </head>
+
+<div class="centered_layout">
+<header>
 <body>
 
     <!--a = anchor = ancla-->
@@ -17,12 +21,20 @@
     <!--URL: protocolo(https)://nombredominio/ruta-->
 
   
-    <img src="DSC_0115.jpg" alt="Una foto">
+    <img class="porfile_picture" src="DSC_0115.jpg" alt="Una foto">
 
     <h1>Agustina Sosa</h1>
 
-    <ul><li><a href="Informacion de contacto"></a>Informacion de contacto</li>
-        <li><a href="Autobiografia"></a>Autobiografia</li></ul>
+    <ul>
+        <li>
+            <a href="Informacion de Contacto.html">Informacion de contacto</a>
+        </li>
+        <li>
+            <a href="Autobiografia.html">Autobiografia</a>
+        </li>
+    </ul>
+
+    </header>
 
     <h2>Bienvenido a mi perfil personal</h2>
     
@@ -77,9 +89,16 @@
                         <progress max="100" value="65"></progress>
                 </td>
             </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td><progress max="100" value="85"></progress></td>
+            </tr>
         </tbody>
         <tfoot></tfoot>
     </table>
 
 </body>
+
+</div>
+
 </html>
