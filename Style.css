@@ -21,11 +21,13 @@ text-align: center;
 }
 
 .porfile_picture{
-    width: 250px;
+    width: 180px;
     border-radius: 50%
 }
 
 .porfile_links{
+    list-style: none;
+    padding: 0;
 
 }
 
