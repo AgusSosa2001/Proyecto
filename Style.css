@@ -1,40 +1,44 @@
+
 body {
-    background: skyblue;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-
-h1{}
-
-li{}
-
-a{}
-
-.highligth{}
-
-table{
-    width: 50%;
-}
-
-header{
-text-align: center;
-}
-
-.porfile_picture{
-    width: 180px;
-    border-radius: 50%
-}
-
-.porfile_links{
-    list-style: none;
-    padding: 0;
-
 }
 
 .centered_layout{
 
     width: 1200px;
     margin: auto;
+    overflow: hidden;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+    background: #1C2530;
+    border-bottom: 2px solid #bbb;
+    }
+
+header nav a{
+    display: inline-block;
+    margin-right: 30px;
+    color: white;
+    font-size: 12px;
+    text-transform:uppercase;
+     text-decoration: none;
+}
+
+header nav a:hover{
+    color: #A4E8E0; 
+
+}
+
+header nav a:before{
+    display: inline-block;
+    content: "_";
+    color: #A4E8E0;
+    margin-right: 15px;
 
 }
 
