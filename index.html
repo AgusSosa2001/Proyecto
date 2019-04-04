@@ -1,110 +1,43 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Perfil personal</title>
+    <title>Mi sitio personal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Style.css">
     <script src="main.js"></script>
 </head>
 
-<!--a = anchor = ancla-->
-    <!--hand reference-->
-    <!--Target = objetivo - valores por defecto de target: _blank-->
-    <!--URL: protocolo(https)://nombredominio/ruta-->
-
 <body>
-        <div class="centered_layout">
-                <header>
-  
-    <img src="Agus.jpg"
-          alt="Foto de perfil"
-           class="porfile_picture">
+    <header>
+        <nav class="centered-layout">
+            <a href="">Incio</a>
+            <a href="">Acerca de mi</a>
+            <a href="">Servicio</a>
+            <a href="">Portfolio</a>
+            <a href="">Experiencia</a>
+            <a href="">Contacto</a>
 
-    <h1>Agustina Sosa</h1>
-         </header>
+        </nav>
+    </header>
 
-         <aside>
-             <h3>Navega mi información</h3>
-             <hr>
-            <ul>
-                <li>
-                    <a href="Informacion de Contacto.html">Informacion de contacto</a>
-                </li>
-                <li>
-                    <a href="Autobiografia.html">Autobiografia</a>
-                </li>
-            </ul>
+    <section class="content centered-layout">
+        <aside id="profile-info" class="column-left left">
+            <h1>Agustina Sosa</h1>
+            <h2>Web UI Devolper</h2>
+            <hr class="right">
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Possimus modi delectus ratione magni numquam soluta, placeat quas deserunt dignissimos a totam cupiditate dolorum exercitationem perferendis neque accusamus vero,
+                 consequuntur praesentium!</p>
+            <a href="#" class="button-primary">Contratame</a>
         </aside>
-
-    <section>
-    <h2>Bienvenido a mi perfil personal</h2>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus omnis eveniet molestiae,
-         fugit cupiditate vitae autem praesentium! Eos omnis natus soluta, harum non modi enim ad nostrum
-          error necessitatibus?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Dignissimos, blanditiis debitis error numquam facere laborum. 
-        Nulla sapiente magnam eveniet adipisci reprehenderit in numquam 
-        distinctio minima, beatae fugit nostrum repellat eius!</p>    
-
-        <hr>
-
-    <!--Width = Anocho-->
-    <!--Heigh = Alto-->
-
-    <table>
-        <caption>
-            <h3>
-                Mis Habilidades
-            </h3>
-        </caption>
-        <thead>
-            <tr>
-                <th>
-                    Materia
-                </th>
-                <th>
-                    Nivel de desempeno
-                </th>
-            </tr>    
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Git
-                </td>
-                <td>
-                    <progress max="100" value="50"></progress>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    HTML
-                </td>
-                <td>
-                        <progress max="100" value="80"></progress>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    CSS
-                </td>
-                <td>
-                        <progress max="100" value="65"></progress>
-                </td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td><progress max="100" value="85"></progress></td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-</section>
-
-</div>
+    <section id="profile-picture" class="column-center left">
+        <img src="Agus.jpg" alt="">
+    </section>
+        <aside id="profile-skills" class="column-right right">
+            <h1>Skills</h1>
+        </aside>
+    </section>
 </body>
-</html> 
+</html>
