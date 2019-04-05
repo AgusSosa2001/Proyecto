@@ -21,11 +21,12 @@ body {
     padding: 20px 40px;
     border: 2px solid #fff;
     background: #1c2530;
+    box-shadow: 0 0 0 2px #1C2530;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 12px;
-    box-shadow: 0 0 0 2px #1C2530;
+    
 }
 
 /*end helper classes*/
@@ -87,8 +88,7 @@ header nav a:before{
 
 
 .column-right{
-    background: blue;
-    height: 400px;
+    padding: 20px;
 }
 
 #profile-info h1{
