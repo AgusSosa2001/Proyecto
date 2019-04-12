@@ -83,8 +83,8 @@ header nav a:before{
 }
 
 
-.column-center{
-}
+.column-center{}
+
 
 
 .column-right{
@@ -118,5 +118,39 @@ header nav a:before{
 
 #profile-picture img{
     width: 100%;
-    height: 50%;
+}
+
+#profile-skills ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-skills ul li{}
+#profile-skills ul li h3{
+    text-align: center;
+    font-size: 13;
+    text-transform: uppercase;
+}
+#profile-skills ul li h3 span{
+    color: #A4E8E0;
+}
+ 
+/* #profile-skills ul li progress{
+    width: 100%;
+    height: 5px;
+}
+
+#profile-skills ul li progress [value]{
+
+}*/
+
+.progress{
+    height: 5px;
+    background: #ddd;
+}
+
+.progress .value{
+    height: 5px;
+    background: #1C2530;
 }
