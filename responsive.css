@@ -1,0 +1,65 @@
+.desktop{
+    display: none;
+}
+
+.mobile{
+    display: initial;
+}
+
+header{
+    text-align: left;
+}
+
+header nav a{
+    font-size: 24px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+header nav a:before{
+    content: "";
+    margin: 0;
+}
+
+.centered_layout{
+    width: 100%;
+    max-width: initial;
+    min-width: initial;
+}
+
+.content{
+    background-image: url(Agus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.layout-columns{
+    display:grid;
+    padding-top: 0;
+    grid-template-columns: 1fr;
+}
+
+.layout-columns .col{
+    width: 100%;
+    flex: initial;
+    flex-grow: 0;
+}
+
+#profile-info{
+background-color: rgba(255,255,255,.4);
+text-align: center;
+}
+
+#profile-info hr{
+float: none;
+margin: 0 auto 35px;
+}
+
+#profile-picture{
+display: none;
+}
+
+#profile-skills{
+background-color: rgba(255,255,255,.4);
+}
