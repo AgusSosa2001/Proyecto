@@ -57,7 +57,7 @@ img {
     display:inline-block;
     padding: 20px 40px;
     border: 2px solid #fff;
-    background: #1c2530;
+    background-color-color: #1c2530;
     box-shadow: 0 0 0 2px #1C2530;
     color: #fff;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ img {
 
 header{
     text-align: center;
-    background: #1C2530;
+    background-color: #1C2530;
     }
 
 header nav a{
@@ -137,7 +137,7 @@ header nav a:before{
     margin-bottom: 30px;
     margin-right: 0;
     border: 0;
-    background: #A4E8E0;
+    background-color: #A4E8E0;
 }
 
 #profile-info p{
@@ -176,16 +176,16 @@ header nav a:before{
 
 .progress{
     height: 5px;
-    background: #ddd;
+    background-color: #ddd;
 }
 
 .progress .value{
     height: 5px;
-    background: #A4E8E0;
+    background-color: #A4E8E0;
 }
 
 footer{
-    background: #1C2530;
+    background-color: #1C2530;
     padding: 50px 80px !important;
     box-sizing: border-box;
     color: #fff;
@@ -245,6 +245,14 @@ footer aside .info ul li {
         max-width: initial;
         min-width: initial;
     }
+
+    .content{
+        background-image: url(Agus.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     .layout-columns{
         display:grid;
         padding-top: 0;
@@ -258,10 +266,8 @@ footer aside .info ul li {
     }
 
 #profile-info{
-    order: 2;
-    background: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.4);
     text-align: center;
-    margin-top: -120px;
 }
 
 #profile-info hr{
@@ -270,11 +276,11 @@ footer aside .info ul li {
 }
 
 #profile-picture{
-    order: 1;
+    display: none;
 }
 
 #profile-skills{
-    order: 3;
+    background-color: rgba(255,255,255,.4);
 }
 
 }
