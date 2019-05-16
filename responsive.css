@@ -10,15 +10,28 @@ header{
     text-align: left;
 }
 
-header nav a{
+header nav.mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav.mobile a{
     font-size: 24px;
     margin: 0;
     padding: 0 30px;
 }
 
-header nav a:before{
+header nav.mobile a:before{
     content: "";
     margin: 0;
+}
+
+header nav.mobile.menu-visible{
+    display: flex;
+}
+
+header nav.mobile.menu-hidden{
+    display: none; 
 }
 
 .centered_layout{
