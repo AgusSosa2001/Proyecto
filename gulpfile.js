@@ -1,10 +1,28 @@
 var gulp = require ('gulp');
+var browserSync = require ('browser-sync');
+var reload = browserSync.reload;
 
-gulp.task('build', function (){
+gulp.task('build:dev', function (){
     console.log('Ejecutando la tarea build...');
 
-    return gulp.src('./*.html')
-        .pipe(gulp.dest('./build'))
+    return gulp
+        .src('./src/*')
+        .pipe(gulp.dest('./temp'))
+        .pipe(reload({stream: true}));
 });
 
-gulp.task('default', gulp.series(['build']));
+gulp.task('watch', gulp.series(['build:dev']), function(done){
+    gulp.watch('./src/*', gulp.series(['build:dev']));
+    done();
+});
+
+gulp.task('serve', gulp.series(['watch'], function(){
+    console.log('Ejecutando la tarea serve...');
+    browserSync({
+        server: {
+            baseDir: './temp'
+        }
+    });
+}));
+
+gulp.task('default', gulp.series(['build:dev']));
