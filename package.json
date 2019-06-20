@@ -1,0 +1,27 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Pagina de perfil personal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgusSosa2001/Proyecto.git"
+  },
+  "author": "Agustina Sosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgusSosa2001/Proyecto/issues"
+  },
+  "homepage": "https://github.com/AgusSosa2001/Proyecto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
