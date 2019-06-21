@@ -1,28 +1,51 @@
 var gulp = require ('gulp');
 var browserSync = require ('browser-sync');
 var reload = browserSync.reload;
+var teddy = require('gulp-teddy').settings({
+    setTemplateRoot: 'src/templates'
+});
+var htmlmin = require('gulp-htmlmin');
 
-gulp.task('build:dev', function (){
-    console.log('Ejecutando la tarea build...');
-
+gulp.task('build:html', function(){
+    console.log('build HTML comenzo');
     return gulp
-        .src('./src/*')
-        .pipe(gulp.dest('./temp'))
-        .pipe(reload({stream: true}));
+    .src([
+        './src/*.html',
+        '!.src/templates'])
+    .pipe(teddy.compile())
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./.temp'))
+    .pipe(reload({ stream: true }));
 });
 
-gulp.task('watch', gulp.series(['build:dev']), function(done){
-    gulp.watch('./src/*', gulp.series(['build:dev']));
+gulp.task('build:files', function () {
+    console.log('Build files has started');
+  
+    return gulp
+      .src([
+        './src/*',
+        '!./src/templates',
+        '!./src/*.html'
+      ])
+      .pipe(gulp.dest('./.temp'))
+      .pipe(reload({ stream: true }));
+  });
+  
+
+gulp.task('build:dev', gulp.series(['build:html', 'build:files']));
+
+gulp.task('watch', gulp.series(['build:dev'], function(done){
+    gulp.watch('./src/**/*', gulp.series(['build:dev']));
     done();
-});
+}));
 
 gulp.task('serve', gulp.series(['watch'], function(){
     console.log('Ejecutando la tarea serve...');
     browserSync({
         server: {
-            baseDir: './temp'
+            baseDir: './.temp'
         }
     });
 }));
 
-gulp.task('default', gulp.series(['build:dev']));
+//gulp.task('default', gulp.series(['build:dev']));
