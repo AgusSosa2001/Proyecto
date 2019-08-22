@@ -6,7 +6,8 @@ var port = process.env.PORT || 8080;
 server.use(express.static(path.join(__dirname, '/dist/')));
 
 server.get('/', function(req, res){
-    res.status(200).send('Hola mundo!');
+//  res.status(200).send('Hola mundo!');
+return res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
 server.get('/contact', function(req, res){
