@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/AgusSosa2001/Proyecto#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gulp": "^4.0.2"
   },
   "devDependencies": {
